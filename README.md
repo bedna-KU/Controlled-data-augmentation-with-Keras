@@ -15,6 +15,8 @@ cd Controlled-data-augmentation-with-Keras
 ## Parameters
 Change in file keras_data_aug.py
 
+![Keras data augmentation parameters](https://raw.githubusercontent.com/bedna-KU/Controlled-data-augmentation-with-Keras/master/keras_data_augmentation_parameters.jpg)
+
 ## Preview augmented images
 python3 keras_data_aug.py --count 25 --input "images" --output "images_aug" --action show
 
