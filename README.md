@@ -33,7 +33,7 @@ python3 keras_data_aug.py --count 25 --input "images" --output "images_aug" --ac
     --action show, blur or noise
 
 ## Preview augmented images
-python3 blur_and_noise.py --input images --output images_aug -action show
+python3 blur_and_noise.py --input images --output images_aug --action show
 
 ![Preview images](https://raw.githubusercontent.com/bedna-KU/Controlled-data-augmentation-with-Keras/master/blur_and_noise.png)
 
