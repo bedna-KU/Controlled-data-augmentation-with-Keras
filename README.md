@@ -38,7 +38,7 @@ python3 blur_and_noise.py --input images --output images_aug --action show
 ![Preview images](https://raw.githubusercontent.com/bedna-KU/Controlled-data-augmentation-with-Keras/master/blur_and_noise.png)
 
 ## Save blur images
-python3 blur_and_noise.py --input images --output images_aug -action blur
+python3 blur_and_noise.py --input images --output images_aug --action blur
 
 ## Save noise images
-python3 blur_and_noise.py --input images --output images_aug -action noise
+python3 blur_and_noise.py --input images --output images_aug --action noise
