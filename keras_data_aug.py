@@ -28,15 +28,15 @@ args = vars (ap.parse_args () )
 # PARAMETERS
 ###################################################
 
-ROTATION_RANGE = 20
-WIDTH_SHIFT_RANGE = (-10, 10)
-HEIGHT_SHIFT_RANGE = (-10, 10)
-BRIGHTNESS_RANGE = (0.5, 1.5)
-SHEAR_RANGE = 10
-ZOOM_RANGE = (0.8, 1.2)
-FILL_MODE = 'nearest'
-HORIZONTAL_FLIP = True
-VERTICAL_FLIP = False
+ROTATION_RANGE = 20			# In degree
+WIDTH_SHIFT_RANGE = 0.1			# Width * 0.1
+HEIGHT_SHIFT_RANGE = 0.1		# Height * 0.1
+BRIGHTNESS_RANGE = [0.5, 1.5]		# Lower, upper
+SHEAR_RANGE = 10			# Counter-clockwise direction in degrees
+ZOOM_RANGE = [0.8, 1.2]			# Lower, upper
+FILL_MODE = 'nearest'			# "constant", "nearest", "reflect" or "wrap"
+HORIZONTAL_FLIP = True			# True / False
+VERTICAL_FLIP = False			# True / False
 
 ###################################################
 
