@@ -22,7 +22,7 @@ ap.add_argument ("-o", "--output", type = str, required = False,
 ap.add_argument ("-a", "--action", type = str, required = True,
 	choices=['show', 'save'],
 	help = "show or save images")
-args = vars (ap.parse_args () )
+args = vars (ap.parse_args ())
 
 ###################################################
 # PARAMETERS
@@ -56,7 +56,7 @@ else:
 action = args["action"]
 
 # Calculate the number of columns
-count_columns = int (math.ceil (math.sqrt (count) ) )
+count_columns = int (math.ceil (math.sqrt (count)))
 # Calculate the number of rows
 count_rows = math.ceil (count / count_columns)
 
@@ -73,7 +73,6 @@ def read_images_in_dir (path):
 
 # Preview augmented images
 def show (data_generator):
-
 	# Read only images in directory
 	images_path = read_images_in_dir (input)
 
@@ -118,14 +117,13 @@ def show (data_generator):
 
 	# Show preview
 	window_name = "Preview window"
-	image_y = cv2.resize (image_y, (int (image_y.shape[1] / desk_ratio) - 150, int (image_y.shape[0] / desk_ratio) - 150 ) )
+	image_y = cv2.resize (image_y, (int (image_y.shape[1] / desk_ratio) - 150, int (image_y.shape[0] / desk_ratio) - 150 ))
 	cv2.imshow (window_name, image_y)
 	cv2.moveWindow (window_name ,0 ,0)
 	cv2.waitKey ()
 
 # Save augmented images
 def save (data_generator):
-
 	# Read only images in directory
 	images_path = read_images_in_dir (input)
 
@@ -134,10 +132,10 @@ def save (data_generator):
 		image = cv2.imread (image_name)
 		# Reshape images to (1, height, width, channels)
 		images = image.reshape (1, image.shape[0], image.shape[1], image.shape[2])
-
 		# Get images from generator
 		data_generator.fit (images)
 		image_iterator = data_generator.flow (images)
+
 		for i in range (count):
 			image_aug = image_iterator.next ()[0].astype ('uint8')
 			# ~ file_name = os.path.basename (image_name)[0] + '_' + str (i) + os.path.splitext (image_name)[1]
@@ -167,4 +165,4 @@ if action == "show":
 	show (data_generator)
 # Save augmented images
 elif action == "save":
-    save (data_generator)
+	    save (data_generator)
