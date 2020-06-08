@@ -1,0 +1,8 @@
+tensorflow
+keras
+opencv-python
+opencv-python
+numpy
+argparse
+screeninfo
+scikit-image
