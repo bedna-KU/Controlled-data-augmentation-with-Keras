@@ -1,5 +1,8 @@
 # Controlled data augmentation with Keras
 
+## Why
+Blog in Slovak language https://linuxos.sk/blog/zumpa/detail/umela-inteligencia-data-augmentation/
+
 ## Installation
 ```
 git clone https://github.com/bedna-KU/Controlled-data-augmentation-with-Keras.git
