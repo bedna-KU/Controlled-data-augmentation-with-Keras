@@ -5,9 +5,9 @@ Blog in Slovak language https://linuxos.sk/blog/zumpa/detail/umela-inteligencia-
 
 ## Installation
 ```
-python3 -m pip install -r requirements.txt
 git clone https://github.com/bedna-KU/Controlled-data-augmentation-with-Keras.git
 cd Controlled-data-augmentation-with-Keras
+python3 -m pip install -r requirements.txt
 ```
 
 ## Options
